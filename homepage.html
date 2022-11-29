@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>Homepage</title>
+    <meta charset="UTF-8">
     <!--Boxicon-->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<!--Google Fonts-->
@@ -27,11 +27,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
-
-    .begin{
-        display: flex;
-        justify-content: center;
     }
 
     #icon-left,
@@ -74,6 +69,7 @@
     img {
         border-radius: 50px;
         box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        cursor: pointer;
     }
 
     .container-main{
@@ -163,12 +159,13 @@
                 <!--botões do cabeçalho-->
                 <div class="button-geral">
                     <button type="submit" class="cadastro-btn">Cadastre-se</button>
-                    <a href="login-final.html" class="login-btn">Login</a>
+                    <a href="login.html" class="login-btn">Login</a>
                 </div>
                 <div class="detalhes-carrinho-icon">
                     <i class='bx bxs-cart-add'></i>
                 </div>
             </nav>
+
             <!--Menu lateral-->
             <input type="checkbox" id="check">
             <label for="check">
@@ -196,30 +193,36 @@
             <button type="submit" class="pesquisar-btn">Pesquisar</button>
     </div>
 
-    <br><br><br><br>
-
-    <div class="begin">
-        <i id="icon-left" class='bx bx-left-arrow-circle'></i>
-        <img src="https://i.imgur.com/5dj3FPS.jpg"width="800" height="400"/>
-        <i id="icon-right" class='bx bx-right-arrow-circle'></i>
-    </div>
-
     <br><br><br><br><br>
+    
     <!--imagens dos serviços ofertados-->
     <div class="container-serviços">
         <div class="child">
-            <img src="https://i.imgur.com/0us9CbU.jpg"width="200" height="200"/>
+            <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)" alt="vitaminas e sucos" src="https://i.imgur.com/0us9CbU.jpg"width="200" height="200"/>
         </div>
         <div class="child">
-            <img src="https://i.imgur.com/nl11v3V.jpg"width="200" height="200"/>
+            <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)"  alt="marmitas prontas" src="https://i.imgur.com/nl11v3V.jpg"width="200" height="200"/>
+        </div>
+            <div class="child">
+                <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)" alt="pratos do dia" src="https://i.imgur.com/96Zjqsv.jpg"width="200" height="200"/>
             </div>
             <div class="child">
-                <img src="https://i.imgur.com/96Zjqsv.jpg"width="200" height="200"/>
-            </div>
-            <div class="child">
-                <img src="https://i.imgur.com/WdLOU3c.jpg"width="200" height="200"/>
+                <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)" alt="sobremesa" src="https://i.imgur.com/WdLOU3c.jpg"width="200" height="200"/>
             </div>
     </div>
+
+    <!--interação javascript-->
+    <script>
+        function imgGrande(x){
+            x.style.height = "250px"
+            x.style.width = "250px"
+        }
+
+        function imgNormal(x){
+            x.style.height = "200px"
+            x.style.width = "200px"
+        }
+    </script>
 
     <br><br><br><br><br><br><br><br><br><br>
     <hr>
