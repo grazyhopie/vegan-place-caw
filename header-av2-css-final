@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    background:#f2f2f2;
+}
+
+nav{
+background: #2eb82e;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+height: 70px;
+padding: 0 100px;
+}
+
+nav .nav-items{
+display: flex;
+flex: 1;
+list-style: none;
+padding: 0 0 0 100px;
+}
+
+nav .nav-items li{
+padding: 0 20px;
+}
+
+nav .nav-items li a{
+color:#fff;
+font-size: 20px;
+font-weight: 500;
+text-decoration: none;
+}
+
+nav .nav-items li a:hover{
+color: #105710;
+font-weight: bold;
+}
+
+/*container geral dos botões*/
+.button-geral{
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Botão de cadastro*/
+.cadastro-btn{
+    background-color: #258de2;
+    color: white;
+    border-style: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Poppins', sans-serif;
+}
+
+.cadastro-btn:hover{
+    background-color: rgb(72, 203, 255);
+}
+
+.cadastro-btn:active{
+    background-color: rgb(10, 107, 146);
+}
+
+/*Botão de login*/
+.login-btn{
+    background-color: #09b967;
+    color: white;
+    border: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    padding: 9px 37px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left: 5px;
+}
+
+.login-btn:hover{
+    background-color: rgb(51, 209, 130);
+}
+
+.login-btn:active{
+    background-color: rgb(15, 124, 70);
+}
+
+nav .logotipo{
+color: #fff;
+font-size: 30px;
+font-weight: 300;
+letter-spacing: 1px;
+font-family: 'Alfa Slab One', cursive;
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.detalhes-carrinho-icon{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-left: 30px;
+}
+.caixa-de-pesquisa{
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.barra-de-pesquisa{
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px 100px;
+    background: #fff;
+    border: 1px solid rgba(155, 155, 155, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Poppins', sans-serif;
+}
+/*Botão de pesquisar*/
+.pesquisar-btn{
+    background-color: #09b967;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    outline: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    margin-left: 11px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.pesquisar-btn:active{
+    background-color: rgb(15, 124, 70);
+}
