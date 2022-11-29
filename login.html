@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Login</title>
     <meta charset="UTF-8">
-    <title>Homepage</title>
     <!--Boxicon-->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<!--Google Fonts-->
@@ -43,18 +43,18 @@
     }
 
     .myFieldset{
-        display: flex;
+        display: block;
         background: linear-gradient(90deg, #D2FADF 0%, #00BE8A 90%);
         border-radius: 50px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         width: 500px;
-        height: 560px;
+        height: 590px;
         margin-left: 30%;
-        overflow: hidden;
         justify-content: center;
     }
 
     fieldset{
+        display: block;
         margin-top: 20px;
         border: none;
     }
@@ -70,7 +70,7 @@
         text-shadow: black 0.1em 0.1em 0.2em;
     }
 
-    fieldset a{
+    fieldset a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -192,9 +192,12 @@
         margin-left: 22%;
     }
 
-    h5 a{
-        padding-left: 5px;
-        padding-bottom: 2px;
+    .cont-voltar{
+        font-size: 35px;
+        margin-left: 60px;
+        float: left;
+        margin-top: 50px;
+        color: #0e7545;
     }
 </style>
 </head>
@@ -208,15 +211,17 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contato</a></li>
                 </div>
+
                 <!--botões do cabeçalho-->
                 <div class="button-geral">
                     <button type="submit" class="cadastro-btn">Cadastre-se</button>
-                    <a href="login-final.html" class="login-btn">Login</a>
+                    <a href="login.html" class="login-btn">Login</a>
                 </div>
                 <div class="detalhes-carrinho-icon">
                     <i class='bx bxs-cart-add'></i>
                 </div>
             </nav>
+
             <!--Menu lateral-->
             <input type="checkbox" id="check">
             <label for="check">
@@ -243,6 +248,7 @@
     </h1>
 
     <br><br><br><br>
+
     <form>
         <div class="myFieldset">
             <br>
@@ -278,14 +284,21 @@
                     </button>
                 </div>
                 <br>
-                <h5>Não possui uma conta?
-                    <a href="#">Cadastre-se</a>
-                </h5>
+                    <a href="#">Não possui uma conta? Cadastre-se</a>
+                </div>
             </fieldset>
         </div>
     </form>
 
-    <br><br><br><br><br><br><br>
+    <br><br><br><br>
+
+    <div class="cont-voltar">
+        <i id="voltar" class='bx bx-left-arrow-alt'></i>
+        <a style="text-decoration: underline; color:#0e7545;" href="homepage.html">Voltar para a página inicial</a>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
     <div class="myFooter">
         <div class="logotipo-footer">Vegan Place</div>
         <br>
@@ -296,7 +309,7 @@
                 <i class='bx bxl-mastercard'></i>
                 <i class='bx bxl-paypal'></i>
             </div>
-            <hr><hr>
+            <hr>
             <br>
         <h5>
             <i class='bx bx-copyright'></i>
