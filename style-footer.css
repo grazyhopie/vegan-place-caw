@@ -34,14 +34,10 @@ hr{
 }
 
 h5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 350px;
 }
 
 .icons-redes-sociais{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1px 400px 1px 450px;
     font-size: 30px;
 }
