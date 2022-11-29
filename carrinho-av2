@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <!--Boxicon-->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<!--Css Externo-->
+    <link rel="stylesheet" href="styleMenuLateral.css">
+    <link rel="stylesheet" href="style-my-header.css">
+    <link rel="stylesheet" href="style-footer.css">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1{
+        display: flex;
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        background-color: #3ace3a;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 45px;
+    }
+
+    h1 i{
+        padding: 15px;
+    }
+
+    table{
+        background-color: rgb(219, 216, 211);
+        height: 500px;
+        width: 1050px;
+        margin-left: 110px;
+    }
+
+    th{
+        font-size: 23px;
+        background: linear-gradient(90deg, #D2FADF 0%, #00BE8A 90%);
+        text-shadow: white 0.1em 0.1em 0.2em;
+        color: black;
+    }
+
+    td{ 
+        padding-top: 15px;
+        background-color: rgb(214, 253, 233);
+        font-size: 25px;
+        font-style: bold;
+        color: #042b19;
+    }
+
+    .quant-itens{
+        height: 26px;
+        width: 60px;
+        border-radius: 5px;
+        padding-top: 9px;
+        background: #fff;
+        border: 1px solid #1fac6a;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    tr{
+        text-align: center;
+    }
+
+    tr i{
+        font-size: 25px;
+        color: #0e7545;
+    }
+
+    img{
+        border-radius: 5px;
+    }
+
+    figcaption{
+        font-size: 17px;
+        padding-bottom: 15px;
+    }
+
+    /*container Aplicar desconto*/
+    .container-aplicar{
+        border: none;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /*Botão de Aplicar desconto no carrinho*/
+    .aplicar-btn{
+        background-color: #1fac6a;
+        color: white;
+        border: none;
+        font-weight: bold;
+        font-size: 13px;
+        outline: none;
+        padding: 8px 36px;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        margin-left: 35px;
+    }
+
+    .aplicar-btn:hover{
+        background-color: rgb(51, 209, 130);
+    }
+
+    .aplicar-btn:active{
+        background-color: rgb(15, 124, 70);
+    }
+
+    .container-finalizar-compra{
+        border: none;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .myFieldset-car{
+        display: flex;
+        background: linear-gradient(90deg, #D2FADF 0%, #6ee1f0 90%);
+        border-radius: 50px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        width: 380px;
+        height: 200px;
+        margin-left: 10%;
+        justify-content: center;
+    }
+
+    fieldset{
+        margin-top: 10px;
+        border: none;
+    }
+
+    #desconto{
+        border-radius: 5px;
+        height: 30px;
+        width: 150px;
+        padding-left: 40px;
+        margin-left: 20px;
+        border-color: #055a3a;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    fieldset h2{
+        padding-left: 65px;
+        text-shadow: white 0.1em 0.1em 0.2em;
+    }
+    
+    /*Botão de Finalizar compra no carrinho*/
+    .finalizar-compra-btn{
+        background-color: #1fac6a;
+        color: white;
+        border: none;
+        font-weight: bold;
+        font-size: 18px;
+        outline: none;
+        padding: 8px 25px;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .finalizar-compra-btn:hover{
+        background-color: rgb(51, 209, 130);
+    }
+
+    .finalizar-compra-btn:active{
+        background-color: rgb(15, 124, 70);
+    } 
+
+    .final{
+        float:right;
+    }
+
+    .final h2,
+    h3{
+        padding-left: 20px;
+        font-size: 35px;
+        color: #0e7545;
+        margin-right: 50px;
+    }
+
+    .final h3{
+        color: black;
+        font-size: 27px;
+        float: right;
+    }
+
+    .final .finalizar-compra-btn{
+        float: right;
+        margin-right: 30px;
+    }
+    
+    .cont-voltar{
+        font-size: 35px;
+        margin-left: 60px;
+        float: left;
+        margin-top: 50px;
+        color: #0e7545;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="area-de-pesquisa">
+            <nav>
+                <div class="logotipo">Vegan Place</div>
+                <div class="nav-items">
+                    <li><a href="#">Cardapio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </div>
+                <!--botões do cabeçalho-->
+                <div class="button-geral">
+                    <button type="submit" class="cadastro-btn">Cadastre-se</button>
+                    <a href="login-final.html" class="login-btn">Login</a>
+                </div>
+                <div class="detalhes-carrinho-icon">
+                    <i class='bx bxs-cart-add'></i>
+                </div>
+            </nav>
+            <!--Menu lateral-->
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class='bx bx-menu' id="btn"></i>
+                <i class='bx bx-x' id="cancel"></i>
+            </label>
+            <div class="MenuLateral">
+                <div class="detalhes-logotipo-folha">
+                    <i class='bx bxs-leaf'></i>
+                </div>
+                <ul>
+                    <li><a href="#"><i class='bx bx-phone'></i>Contato</a></li>
+                    <li><a href="#"><i class='bx bx-hash'></i>Sobre Nós</a></li>
+                    <li><a href="#"><i class='bx bxs-star'></i>Avaliações</a></li>
+                    <li><a href="#"><i class='bx bx-question-mark'></i>FAQ</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <br><br><br><br>
+
+    <h1>
+        <i class='bx bx-leaf'></i>
+               Carrinho
+    </h1>
+
+    <br><br><br><br>
+
+    <table>
+		<th>Produto</th>
+		<th>Preço Unitário</th>
+		<th>Quantidade</th>
+		<th>Excluir</th>
+		<tr>
+			<td>
+                <figure>
+                <img src="https://i.imgur.com/tPXbfwa.jpg"width="150" height="100"/>
+                <figcaption>x-burguer vegano</figcaption>
+                </figure>
+            </td>
+			<td>R$ 40,00</td>
+			<td>
+                <i class='bx bxs-plus-square'></i>
+                <input type="search" class="quant-itens" placeholder="   0">
+                <i class='bx bxs-minus-square'></i>
+            </td>
+			<td><i class='bx bxs-x-square'></i></td>
+		</tr>
+		<tr>
+			<td>
+                <figure>
+                <img src="https://i.imgur.com/sU2Bgr2.jpg"width="150" height="100"/>
+                <figcaption>prato especial</figcaption>
+                </figure>
+            </td>
+			<td>R$ 30,00</td>
+			<td>
+                <i class='bx bxs-plus-square'></i>
+                <input type="search" class="quant-itens" placeholder="   0">
+                <i class='bx bxs-minus-square'></i>
+            </td>
+			<td><i class='bx bxs-x-square'></i></td>
+		</tr>
+		<tr>
+			<td>
+                <figure>
+                <img src="https://i.imgur.com/vFDpSkR.jpg"width="150" height="100"/>
+                <figcaption>vitamina especial</figcaption>
+                </figure>
+            </td>
+			<td>R$ 20,00</td>
+			<td>
+                <i class='bx bxs-plus-square'></i>
+                <input type="search" class="quant-itens" placeholder="   0">
+                <i class='bx bxs-minus-square'></i>
+            </td>
+			<td><i class='bx bxs-x-square'></i></td>
+		</tr>
+	</table>	
+
+    <br><br><br><br>
+
+    <form>
+        <div class="myFieldset-car">
+            <br>
+            <fieldset>
+                <h2>Cupom de desconto</h2>
+                <br>
+                <div class="container-aplicar">
+                    <label for="desconto"></label>
+				    <input type="text" id="desconto" placeholder="digitar cupom">
+                    <button type="submit" class="aplicar-btn">Aplicar</button>
+                </div>
+                <br><br>
+            </fieldset>
+        </div>
+    </form>
+    <br><br><br><br><br><br>
+
+    <div class="cont-voltar">
+        <i id="voltar" class='bx bx-left-arrow-alt'></i>
+        <a style="text-decoration: underline; color:#0e7545;" href="homepageVersion2.html">Voltar</a>
+    </div>
+    <br>
+    
+    <div class="final">
+    <h2>Valor total</h2>
+    <br>
+    <h3>R$ 90,00</h3>
+    <br><br>
+        <div class="container-finalizar-compra">
+            <a href="login-final.html" class="finalizar-compra-btn">Finalizar compra</a>
+        </div>
+    </div>
+
+    <script>
+
+    overlay
+    </script>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br>
+
+    <div class="myFooter">
+        <div class="logotipo-footer">Vegan Place</div>
+        <br>
+        <h2>Formas de Pagamento</h2>
+            <div class="icons-pagamento">
+                <i class='bx bxs-credit-card-alt' ></i>
+                <i class='bx bxl-visa'></i>
+                <i class='bx bxl-mastercard'></i>
+                <i class='bx bxl-paypal'></i>
+            </div>
+            <hr>
+            <br>
+        <h5>
+            <i class='bx bx-copyright'></i>
+            2022 VeganPlace Delivery | Todos os direitos reservados
+        </h5>
+        <br>
+        <div class="icons-redes-sociais">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-whatsapp'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter' ></i>
+        </div>
+    </div>  
+</body>
+</html>
